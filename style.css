@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logo {
+    padding: 20px 40px;
+    font-size: 23px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin: 0 13px;
+    line-height: 80px;
+    font-size: 15px;
+}
+
+.nav-bar ul li a:hover {
+    color: #71818c !important;
+    transition: 0.5s;
+}
+
+
+.cart {
+    margin-right: 30px;
+}
+
+.slider {
+    background-image: url('https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/fashion-22.jpg');
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 20%;
+    padding-top: 37%;
+    position: relative;
+}
+
+.slider-texts {
+    position: absolute;
+    top: 24%;
+    left: 14%;
+    color: white;
+}
+
+.slider-text-header {
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+.slider-text-header::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    background-color: #f7d584;
+    bottom: -20px;
+    left: 0;
+
+}
+
+.slider-text {
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.section-container {
+    height: 590px;
+    margin: 150px auto;
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    box-shadow: 0px 40px 40px 0px rgba(192, 192, 192, 0.5);
+}
+
+.section-img-background {
+    background-image: linear-gradient(35deg, #ff6a88 0%, #ff99ac 100%);
+    position: relative;
+}
+
+.section-img {
+    width: inherit;
+}
+
+.section-img img {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: -4%;
+    left: 11%;
+}
+
+.section-wwd {
+    padding-left: 100px;
+    margin-top: 50px;
+}
+.header-wwd{
+    position: relative;
+}
+.header-wwd h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2b2b2b;
+    font-size: 28px;
+    margin-bottom: 30px;
+
+}
+
+.header-wwd::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    background-color: #f7d584;
+    
+}
+
+.text-wwd{
+    margin-top: 70px;
+    color: #00000066;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+.wwdbtn{
+    padding: 12px 28px;
+    background-color: #FC7086;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    color: white;
+    box-shadow: 0px 10px 30px 0px rgb(252 112 134 / 50%);   
+    cursor: pointer;
+}
+
+.section-sl-container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.header-sl h2{
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    padding: 0px 0px 10px;
+}
+
+.header-sl::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    background-color: #f7d584;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    
+}
+
+.text-sl{
+    margin-top: 50px;
+    text-align: center;
+    color: #00000066;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.imgs-sl{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-sl{
+    background-image: linear-gradient(35deg, #fb5b7b 0%, #fe7b93 100%);  
+    position: relative; 
+}
+
+.img-sl img{
+    max-width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.img-sl i{
+    width: 40px;
+    height: 40px;
+    display: none;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    color: #ff99ac; 
+}
+
+.img-sl .arrow-container{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    border-radius: 30px;
+    display: none;
+}
+
+.img-sl:hover img{
+    opacity: 0.2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-sl:hover i{
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+}
+
+
+.img-sl:hover .arrow-container{
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+}
+
+.img-sl h3{
+    margin-top: 6px;
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+.btn-sl{
+    text-align: center;
+}
+
+.btn-sl .btn{
+    margin-top: 80px;
+    text-align: center;
+    padding: 12px 28px;
+    background-color: white;
+    border: 1px solid #2b2b2b;
+    font-weight: 500;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
